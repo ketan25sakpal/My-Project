@@ -1,0 +1,22 @@
+{
+  "campus": {
+    "name": "College 3D Campus",
+    "version": "0.3.0",
+    "coordinateSystem": "local-xz"
+  },
+  "locations": [
+    {"id":"main-building","name":"Main Building","category":"Facilities","type":"Administration","x":-14,"z":-7,"floors":["Ground Floor","First Floor","Second Floor"]},
+    {"id":"science-block","name":"Science Block","category":"Academic","type":"Academic","x":3,"z":-7,"floors":["Ground Floor","First Floor","Second Floor"]},
+    {"id":"library","name":"Library","category":"Student","type":"Learning","x":-13,"z":6,"floors":["Ground Floor","First Floor"]},
+    {"id":"computer-lab","name":"Computer Lab","category":"Academic","type":"Laboratory","x":0,"z":7,"floors":["Ground Floor"]},
+    {"id":"auditorium","name":"Auditorium","category":"Student","type":"Events","x":13,"z":5,"floors":["Ground Floor","First Floor"]},
+    {"id":"canteen","name":"Canteen","category":"Student","type":"Food & Student Area","x":-1,"z":15,"floors":["Ground Floor"]},
+    {"id":"sports-ground","name":"Sports Ground","category":"Student","type":"Sports","x":11,"z":-10,"floors":[]},
+    {"id":"parking","name":"Parking","category":"Facilities","type":"Parking","x":-15,"z":15,"floors":[]}
+  ],
+  "rooms": [
+    {"id":"room-demo-101","buildingId":"science-block","floor":"Ground Floor","name":"Demo Classroom 101","department":"Computer Science"},
+    {"id":"room-demo-201","buildingId":"science-block","floor":"First Floor","name":"Demo Lab 201","department":"Computer Science"},
+    {"id":"room-demo-301","buildingId":"science-block","floor":"Second Floor","name":"Demo Classroom 301","department":"Physics"}
+  ]
+}
