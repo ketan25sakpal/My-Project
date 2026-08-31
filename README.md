@@ -1,20 +1,39 @@
 # College 3D Campus Map
 
-Interactive 3D college/campus map built with Three.js and deployed as a static web app.
+Interactive 3D college campus map prototype built with Three.js.
 
-## Features
-- 3D campus view
-- Orbit, zoom and pan controls
-- Clickable buildings
+## Current features
+
+- Interactive 3D campus scene
+- Orbit camera: rotate, zoom and pan
+- Clickable campus buildings
 - Building search
+- Category filters
 - Building information panel
-- Demo paths and trees
+- Focus-location camera action
+- Responsive mobile layout
+- Structured campus data in `campus-data.json`
+
+## Roadmap
+
+1. Replace demo coordinates with the real college site plan.
+2. Add building floors and room-level locations.
+3. Add start/destination navigation with a highlighted route.
+4. Add a current-location marker.
+5. Add real 3D building models where available.
+6. Add college branding, logo and accessibility improvements.
+7. Deploy the production version on Vercel.
 
 ## Run locally
-Open `index.html` in a modern browser, or serve the folder with any static HTTP server.
 
-## Customize
-Edit the `buildings` array in `index.html` to match the real college layout. Each building supports name, type, position, width, depth, height and description.
+This is a static web app. Open `index.html` through a local static server for the best browser behavior.
 
-## Deploy
-This repository can be imported directly into Vercel as a static site. No build command is required.
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## Data model
+
+`campus-data.json` separates campus locations and room metadata from the visual model. Demo room records show how department, floor and room information will be represented when real campus data is added.
