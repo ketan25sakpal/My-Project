@@ -12,17 +12,37 @@ Interactive 3D college campus map prototype built with Three.js.
 - Building information panel
 - Focus-location camera action
 - Responsive mobile layout
-- Structured campus data in `campus-data.json`
+- Structured campus data
+- Campus route/pathfinding demonstration
+- Floor and room exploration
+- **Computer Science Department — 5th Floor interior demonstration**
+- **5th Floor passage view** based on the uploaded reference video
+- **CS Lab 2 interior view** with computer rows, monitors and red chairs
+
+## 5th Floor CS Interior
+
+Open `cs-floor5.html` through the same static server to explore:
+
+- Computer Science Department 5th Floor passage
+- Corridor windows and cabinets/storage
+- Classroom doors and notice boards
+- CS Lab 2
+- Computer desks and monitors
+- Red laboratory chairs
+- Teaching desk and display board
+
+The interior is a visual demonstration based on the uploaded reference video. Dimensions and room positions should be calibrated against the real floor plan before treating the model as an accurate building map.
 
 ## Roadmap
 
-1. Replace demo coordinates with the real college site plan.
-2. Add building floors and room-level locations.
-3. Add start/destination navigation with a highlighted route.
-4. Add a current-location marker.
-5. Add real 3D building models where available.
-6. Add college branding, logo and accessibility improvements.
-7. Deploy the production version on Vercel.
+1. Replace demo campus coordinates with the real college site plan.
+2. Replace demo 5th-floor geometry with calibrated measurements.
+3. Add actual room numbers and department locations.
+4. Connect campus navigation to building/floor/room navigation.
+5. Add current-location marker.
+6. Add real 3D building models where available.
+7. Add college branding, logo and accessibility improvements.
+8. Deploy the production version on Vercel.
 
 ## Run locally
 
@@ -34,6 +54,4 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Data model
-
-`campus-data.json` separates campus locations and room metadata from the visual model. Demo room records show how department, floor and room information will be represented when real campus data is added.
+For the 5th-floor interior demo, open `http://localhost:8000/cs-floor5.html`.
